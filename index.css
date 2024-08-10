@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  border-radius: 16px;
+  background-color: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300, 400, 600;
+  font-size: 18px;
+  font-style: normal;
+}
+.main {
+  width: 80%;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  border-radius: 6px;
+}
+#eq-image {
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+}
+.coin-time {
+  display: flex;
+  justify-content: space-between;
+}
+#eth-amount {
+  color: hsl(178, 100%, 50%);
+}
+.text {
+  color: hsl(215, 51%, 70%);
+}
+.img-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+hr {
+  background-color: hsl(215, 32%, 27%);
+  height: 3px;
+  border: none;
+}
+.acknowledgement {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.credit {
+  text-align: center;
+  white-space: nowrap;
+  margin-right: 55px;
+}
+#creator {
+  color: hsl(0, 0%, 100%);
+}
+.acknowledgement img {
+  display: block;
+  width: 30%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+a:hover {
+  color: darkblue;
+}
+a:visited {
+  color: cornflowerblue;
+}
+a:active {
+  color: lightcyan;
+}
+/* Deskop breakpoint (1024px) */
+@media (min-width: 1024px) {
+  .main {
+    width: 95%;
+    padding: 35px;
+  }
+  .acknowledgement img {
+    height: 35px;
+    width: 35px;
+  }
+}
+/*Tablet breakpoint (991px)*/
+@media (max-width: 991px) {
+  .main {
+    width: 80%;
+    padding: 30px;
+  }
+  .acknowledgement img {
+    height: 30px;
+    width: 30px;
+  }
+}
+/*Mobile breakpoint (767px)*/
+@media (max-width: 767px) {
+  .main {
+    width: 90%;
+    padding: 20px;
+  }
+  .acknowledgement img {
+    height: 35px;
+    width: 35px;
+  }
+  h1 {
+    font-size: 1.2em;
+  }
+}
